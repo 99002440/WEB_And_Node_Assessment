@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question one form</title>
+    <script>
+        function showData() {
+            debugger;
+            var Textdata = document.getElementById("textbox").value;
+            var x = document.getElementById("mdate").value;
+            
+            var e = document.getElementById("details");
+            var strUser = e.options[e.selectedIndex].text;
+            var cmd=document.getElementById("cmnd");
+            document.getElementById("p1").innerHTML = Textdata;
+            document.getElementById("p2").innerHTML = x;
+            document.getElementById("p3").innerHTML = strUser;
+            document.getElementById("p5").innerHTML = cmd;
+            var ele = document.getElementsByName('gender'); 
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                document.getElementById("p4").innerHTML
+                        = "Gender: "+ele[i].id; 
+            } 
+        } 
+             
+    </script>
+</head>
+<body>
+    <form action="">     
+            <p><input type="text" placeholder="Enter the Text" id="textbox" /></p>
+            <p><input type="date" placeholder="Enter the Date" id="mdate" /></p>
+
+            <p>
+                select the Programming language:<br/>
+                <select id="details">
+                    <option>C++</option>
+                    <option>C</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>golang</option>
+                </select>
+            </p>
+
+            <p>
+                   Gender: <input type="radio" name="gender" id="male">Male 
+                           <input type="radio" name="gender" id="female">Female
+            </p>
+            <p>
+                command over the language:
+                <select id="cmnd">
+                <input type="checkbox" id="b">Beginner
+                <input type="checkbox" id="i">Intermediate
+                <input type="checkbox" id="exp">Expert
+            </select>
+            </p>
+
+
+
+            <input type="button" value="Submit" id="Submitbtn" onclick="showData()">
+           </form>
+ 
+            <div>
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <p id="p5"></p>
+            </div>
+</body>
+</html>

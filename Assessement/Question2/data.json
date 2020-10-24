@@ -1,0 +1,12 @@
+[{"hotelName":"chandan","hotelCity":"Patna","hotelType":"Veg","hotelCusine":"Indian"},
+    {"hotelName":"Nandan","hotelCity":"Bangalore","hotelType":"Non-Veg","hotelCusine":"Indian"},
+    
+
+    {"hotelName":"Rasooi delite","hotelCity":"Mysore","hotelType":"Non-Veg","hotelCusine":"Indian"},
+    {"hotelName":"By the way","hotelCity":"Patna","hotelType":"Veg","hotelCusine":"Italian"},
+
+
+    {"hotelName":"Rainbow","hotelCity":"Mysore","hotelType":"Veg","hotelCusine":"Chineese"},
+    {"hotelName":"The World","hotelCity":"Patna","hotelType":"Non-Veg","hotelCusine":"Italian"}
+
+    ]
